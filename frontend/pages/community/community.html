@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="community.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="header">
+    <h2>EcoSwap</h2>
+    <nav>
+        <a href="profile.html">Profile</a>
+        <a href="community.html">Community</a>
+        <button onclick="logout()">Logout</button>
+    </nav>
+</header>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="eco.html">Eco Impact</a></li>
+            <li><a href="trust.html">Trust Score</a></li>
+            <li><a href="community.html" class="active">Community</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main -->
+    <main class="content">
+
+        <!-- Create Post -->
+        <section class="create-post">
+            <textarea id="postInput" placeholder="Share your eco activity..."></textarea>
+            <button onclick="createPost()">Post</button>
+        </section>
+
+        <!-- Feed -->
+        <section id="feed" class="feed"></section>
+
+    </main>
+
+</div>
+<script src="api.js"></script>
+<script src="community.js"></script>
+</body>
+</html>
